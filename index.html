@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>LH</title>
+    <link rel="stylesheet" href="./css.css">
+</head>
+
+<body>
+    <nav id="nav" data-transitionable="false" data-toggled="false">
+        <div id="nav-logo-section" class="nav-section">
+            <a href="index.html">
+                <img id="logoWhite" src="./img/Union (3).png" alt="logoWhite">
+            </a>
+        </div>
+        <div id="nav-mobile-section">
+            <div id="nav-link-section" class="nav-section">
+                <a href="#">ABOUT(WIP)</a>
+                <a href="#">WORK(WIP)</a>
+                <a href="CV/CV_LH_UMU.pdf" target="_blank">CV</a>
+            </div>
+            <div id="nav-social-section" class="nav-section">
+                <a href="https://www.linkedin.com/in/lukas-hedstr%C3%B6m-871975231/" target="_blank">
+                    <img id="linkedin" src="./img/linkedin.png" alt="linkedin">
+                </a>
+
+            </div>
+            <div id="nav-contact-section" class="nav-section">
+                <a href="mailto:luhe702@gmail.com?subject=Subject%20Text&body=Body%20Text">GET IN TOUCH</a>
+            </div>
+        </div>
+        <button id="nav-toggle-button" type="button" onclick="handleNavToggle()">
+        <span>MENU</span>
+        <i class="show-menu fa-solid fa-bars"></i>
+      </button>
+    </nav>
+
+    <main>
+        <article data-index="0" data-status="active">
+            <div class="article-image-section article-section"></div>
+            <div class="article-description-section article-section">
+                <p>
+                    En designinriktad student på Civilingenjörsprogrammet Interaktion och Design, år 4. Stora intressen är Grafisk Design, Fotografering samt Bild & Videoredigering.
+                </p>
+                <br><br>
+                <p>
+                    User Interface och User Experience är där jag har framfötterna. Att arbeta med samspelet mellan maskin och människa är en stapel inom programmet och med verktyg som Adobe Xd, Figma, Photoshop och Illustrator illustrerar jag lösningar på ett effektivt
+                    och intuitivt vis. Under programmets gång har jag dessutom fått erfarenhet med Front & Backend-utveckling, enklare webbutveckling är en stark svit som går att vidare jobba på med databashantering.
+                </p>
+                <br><br>
+                <div class="tools">
+                    <img class="figma" src="img/figma.png" alt="figma">
+                    <img class="figma" src="img/xd.png" alt="figma">
+                    <img class="figma" src="img/ps.png" alt="figma">
+                    <img class="figma" src="img/ai.png" alt="figma">
+                    <img class="figma" src="img/html.png" alt="figma">
+                    <img class="figma" src="img/css.png" alt="figma">
+                    <img class="figma" src="img/js.png" alt="figma">
+                    <img class="figma" src="img/vegas.png" alt="figma">
+                </div>
+            </div>
+            <div class="article-title-section article-section">
+                <h2>OM MIG</h2>
+                <i class="fa-light fa-plus-large"></i>
+            </div>
+            <div class="article-nav-section article-section">
+                <button class="article-nav-button" type="button" id="left-button" onclick="handleLeftClick()">
+            <img src="./img/left-arrow.png" alt="Arrow">
+          </button>
+                <button class="article-nav-button" type="button" id="right-button" onclick="handleRightClick()">
+            <img src="./img/right-arrow.png" alt="Arrow">
+          </button>
+            </div>
+        </article>
+        <article data-index="1" data-status="inactive">
+            <div class="article-image-section article-section"></div>
+            <div class="article-description-section article-section">
+                <p>I ett samarbete med Trimma så fick min projektgrupp i uppdrag att skapa en responsiv lösning från grunden av deras ursprungligen datorfokuserade gränssnitt. Syftet var att underlätta för Trimmas kunder att använda Insikt på mobila enheter
+                    eller små skärmar. Helt responsiv Hi-Fi prototyp.
+                </p>
+                <br><br>
+                <div class="tools">
+                    <img class="figma" src="img/xd.png" alt="figma">
+                    <img class="figma" src="img/ps.png" alt="figma">
+                    <img class="figma" src="img/figma.png" alt="figma">
+                </div>
+            </div>
+            <div class="article-title-section article-section">
+                <h2>INSIKT m. Trimma</h2>
+                <i class="fa-light fa-plus-large"></i>
+            </div>
+            <div class="article-nav-section article-section">
+                <button class="article-nav-button" type="button" id="left-button" onclick="handleLeftClick()">
+            <img src="./img/left-arrow.png" alt="Arrow">
+          </button>
+                <button class="article-nav-button" type="button" id="right-button" onclick="handleRightClick()">
+            <img src="./img/right-arrow.png" alt="Arrow">
+          </button>
+            </div>
+        </article>
+        <article data-index="2" data-status="inactive">
+            <div class="article-image-section article-section"></div>
+            <div class="article-description-section article-section">
+                <p>Gröna Mackan skapades som ett projekt för att i mindre grupp designa en matbeställningsapp genom hela designprocessen. Med hjälp av moodboards och grafiska profiler så skapades ett påhittat veganskt café.</p>
+                <br><br>
+                <div class="tools">
+                    <img class="figma" src="img/xd.png" alt="figma">
+                    <img class="figma" src="img/ps.png" alt="figma">
+                    <img class="figma" src="img/ai.png" alt="figma">
+                </div>
+            </div>
+            <div class="article-title-section article-section">
+                <h2>Gröna Mackan</h2>
+                <i class="fa-light fa-plus-large"></i>
+            </div>
+            <div class="article-nav-section article-section">
+                <button class="article-nav-button" type="button" id="left-button" onclick="handleLeftClick()">
+            <img src="./img/left-arrow.png" alt="Arrow">
+          </button>
+                <button class="article-nav-button" type="button" id="right-button" onclick="handleRightClick()">
+            <img src="./img/right-arrow.png" alt="Arrow">
+          </button>
+            </div>
+        </article>
+        <article data-index="3" data-status="inactive">
+            <div class="article-image-section article-section"></div>
+            <div class="article-description-section article-section">
+                <p>
+                    Denna portfolio är skriven i HTML, CSS och JS. För tillfället även under konstruktion.
+                </p>
+                <br><br>
+                <div class="tools">
+                    <img class="figma" src="img/html.png" alt="figma">
+                    <img class="figma" src="img/css.png" alt="figma">
+                    <img class="figma" src="img/js.png" alt="figma">
+                </div>
+            </div>
+            <div class="article-title-section article-section">
+                <h2>Min Portfolio</h2>
+                <i class="fa-light fa-plus-large"></i>
+            </div>
+            <div class="article-nav-section article-section">
+                <button class="article-nav-button" type="button" id="left-button" onclick="handleLeftClick()">
+            <img src="./img/left-arrow.png" alt="Arrow">
+        </button>
+                <button class="article-nav-button" type="button" id="right-button" onclick="handleRightClick()">
+          <img src="./img/right-arrow.png" alt="Arrow">
+        </button>
+            </div>
+        </article>
+    </main>
+
+    <script src="js.js"></script>
+    </head>
