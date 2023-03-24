@@ -349,6 +349,8 @@ main>article>.article-nav-section>.article-nav-button:nth-child(2) {
     }
     #nav-toggle-button {
         display: flex;
+        padding: 1rem;
+        font-size: 2rem;
     }
     #nav-link-section {
         flex-basis: 60%;
